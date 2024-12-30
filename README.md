@@ -56,7 +56,7 @@
 ## 作者
 - **名前**: AZU_MAO
 - **X**: @azu_mao84302
-- **GitHub**: [GitHubプロフィールリンク](https://github.com/azumao1113)
+- **GitHub**: [GitHubプロフィールリンク](https://github.com/azumaou1113)
 
 ---
 
