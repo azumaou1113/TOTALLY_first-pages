@@ -1,0 +1,264 @@
+@charset "UTF-8";
+img {
+    width: 100%;
+}
+body {
+    font-family: Raleway;
+    color: #333333;
+    margin: 0;
+
+    
+}
+header {
+    position: relative;
+    font-size: 12px;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+header::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 1px; /* 任意の太さに調整 */
+    background-color: #c3c3c3; /* 任意の色 */
+
+}
+.header {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header img {
+    width: 109px;
+    height: 19px;
+}
+a {
+    text-decoration: none;
+    color: #333333;
+
+}
+li {
+    list-style: none;
+}
+
+.header-logo {
+    text-align: center;
+    margin-top: 46px;
+    margin-bottom: 36px;
+
+    
+}
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav-menu {
+    display: flex;
+    width: 337px;
+    height: 14px;
+    padding-left: 0;
+    margin-bottom: 26px;
+    margin-top: 0;
+}
+.header-nav-item {
+    margin-right: 14px;
+}
+.header-nav-login {
+    display: flex;
+    margin-bottom: 26px;
+    margin-top: 0;
+    padding: 0;
+
+}
+main {
+    max-width: 800px;
+    margin: 0 auto;
+
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 50px;
+    margin-bottom: 110px;
+}
+
+.mainvisual {
+    width: 50%;
+}
+.sec-title {
+    font-size: 16px;
+    margin: 0;
+    padding: 20px 0;
+    border-top: solid #c3c3c3 1px;
+    border-bottom: solid #c3c3c3 1px;
+}
+.sec-wrapper {
+    width: 340px;
+    font-size: 12px;
+}
+.sec-text {
+    margin: 20px 0 30px 0;
+}
+.sec-price {
+    margin: 0;
+}
+.order-table {
+    width: 100%;
+    text-align: center;
+    margin: 30px 0 20px 0;
+    border-collapse: collapse;
+    border: 0;
+}
+
+.order-table tr {
+    border-bottom: 1px solid #c3c3c3;
+}
+.order-table  th{
+    border: 0;
+    border-right: 1px solid #c3c3c3; 
+    padding: 10px 0;
+}
+.order-table tbody tr:last-child {
+    border-bottom: 0;
+}
+.order-table th:last-child {
+    border-right:0;
+}
+.order-table td {
+    border:0 ;
+    border-right: 1px solid #c3c3c3; 
+    padding: 10px 0;
+}
+.order-table td:last-child {
+    border-right: 0;
+    padding: 10px;
+}
+thead th {
+    font-weight: normal;
+    font-family: Raleway;
+    color: #333333;
+    font-size: 12px;
+}
+
+.size-table {
+    width: 100%;
+    text-align: center;
+    margin: 30px 0 20px 0;
+    border-collapse: collapse;
+    border: none; /* 外枠を消す */
+    border: solid #c3c3c3 1px;
+}
+.size-table td ,th {
+    border: 1px solid #c3c3c3; /* セル間の枠線のみ表示 */
+    padding: 10px 0;
+}
+.size-table th {
+    background-color: #ECEBEB;
+}
+.size-table td:first-child {
+    background-color: #ECEBEB;
+}
+
+
+/* セレクトボックスのスタイル */
+.select-arrow {
+    width: 100%;
+    padding: 0px 0px 0px 10px;
+    font-size: 12px;
+    border: 1px solid #c3c3c3;
+    background: transparent;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+
+/* セレクトボックスの矢印のスタイル */
+.select-box {
+    position: relative;
+}
+
+.select-box::after {
+    content: '▼'; /* 矢印を▼として表示 */
+    font-size: 12px;
+    color: #c3c3c3; /* 通常の矢印の色 */
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    pointer-events: none; /* 矢印が選択に影響しないように */
+    transition: color 0.3s ease; /* 色変更時にスムーズなトランジションを追加 */
+}
+.select-arrow option {
+    font-size: 12px;
+    color: #c3c3c3;
+}
+
+/* セレクトボックスのホバー時のスタイル */
+.select-box:hover::after {
+    color: #888;
+}
+.select-arrow:hover {
+    border-color: #888;
+}
+/* セレクトボックスのフォーカス時のスタイル */
+.select-arrow:focus {
+    border-color: #666;
+}
+
+.btn {
+    width: 100%;
+    background-color: #4b4b4b;
+    text-align: center;
+    padding: 18px 0;
+    cursor: pointer;
+
+}
+.btn a {
+    color:  #fff;
+    font-size: 12px;
+    font-family: Raleway;
+    margin: 0;
+    
+}
+
+
+footer {
+    text-align: center;
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+/* スマホ */
+@media screen and (max-width: 896px) {
+    /*ここにスマホ用のCSSを記述する*/
+    .header-logo {
+        margin-top: 36px;
+        margin-bottom: 26px;
+    }
+    .header-nav {
+        flex-direction: column;
+    }
+    .header-nav-login {
+        display: none;
+    } 
+    .header-nav-menu {
+        margin-bottom: 16px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .size-table {
+        margin-bottom: 0;
+    }
+
+    }
